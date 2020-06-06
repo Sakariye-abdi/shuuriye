@@ -10,8 +10,10 @@ body
 	margin: 0;
 	padding: 0;
 	font-family: 'Poppins', sans-serif;
-	
+	font-size: 1rem;
 }
+
+
 
 .social
 {
@@ -37,7 +39,7 @@ body
 
 
 
-.menu
+.nav-container
 {
 	width: 100%;
 	background: #fff;
@@ -51,12 +53,16 @@ body
 
 .menu ul
 {
-	display: flex;
-	justify-content: flex-end;
 	list-style: none;
     margin: 0 60px;
 	//background: #000;
 	flex: 2;
+}
+
+.menu ul li
+{
+	display: inline-block;
+	line-height: 80px;
 }
 
 .menu ul a
@@ -65,7 +71,7 @@ body
 	padding: 0 20px;
 	text-decoration: none;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 1.2rem;
 	text-transform: uppercase;
 }
 
@@ -74,7 +80,6 @@ body
 	display: flex;
 	align-items: center;
 	margin: 0 30px;
-
 }
 
 .logo img
@@ -86,7 +91,7 @@ body
 .logo p
 {
 	font-weight: 600;
-	font-size: 13px;
+	font-size: .9rem;
 	text-transform: uppercase;
 	margin-left: 5px;
 	color: #5c3b03;
@@ -94,7 +99,7 @@ body
 
 .logo span
 {
-	font-size: 20px;
+	font-size: 1.5rem;
 }
 
 .btn
@@ -125,7 +130,7 @@ body
 
 .fund
 {
-	width: 30%;
+    flex: 1;
     position: relative;
     margin-left: 10px;
     margin-top: 20px;
@@ -138,7 +143,7 @@ body
 	width: 60%;
 	text-align: center;
 	color: #fff;
-	font-size: 20px;
+	font-size: 1.2rem;
 	font-weight: 600;
 	margin: auto;
  
@@ -221,8 +226,7 @@ body
 
 .newspaper
 {
-    width: 50%;
-   
+    flex: 2;
  	 background-image: url(images/news1.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -245,7 +249,7 @@ body
 	left: 15%;
 	color: #000;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 1.2rem;
 }
 
 .newspaper h1
@@ -253,7 +257,7 @@ body
 	background: #5c3b03;
 	color: #fff;
 	text-align: center;
-	font-size: 20px;
+	font-size: 1.2rem;
 	font-weight: 600;
 	width: 70%;
 	position: absolute;
@@ -265,7 +269,7 @@ body
 
 .jadwal-container
 {
-	width: 30%;
+	flex: 1;
 	margin-right: 10px;
 	margin-top: 20px;
 }
@@ -361,12 +365,13 @@ body
 	background-size: cover;
 	background-position: center;
 	margin-top: 10px;
+	box-sizing: border-box;
 }
 
 .guitar h2
 {
 	color: rgb(255, 162, 139);;
-	font-size: 45px;
+	font-size: 2rem;
 	font-weight: 600;
 	padding: 10px 10px;
 }
@@ -482,4 +487,76 @@ body
 	color: #868686;
 	font-weight: normal;
 	font-size: 12px;
+}
+
+@media only screen and (max-width: 840px)
+{
+	.section1
+{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.newspaper
+{
+    height: 400px;
+	-moz-height: 400px;
+}
+
+.tabs-section
+{
+	display: flex;
+	flex-direction: column;
+}
+
+}
+
+@media (max-width: 605px)
+{
+   .games-container
+   {
+   	display: flex;
+   	flex-direction: column;
+   }
+
+   .ciyaar
+   {
+   	width: 100%;
+   }
+
+   .habeenka
+   {
+   	width: 100%;
+   	margin-top: 10px;
+   }
+
+   .shaah
+   {
+   	width: 100%;
+    margin-top: 10px;
+   }
+
+   .footer-container
+   {
+   	display: flex;
+   	flex-direction: column;
+   }
+}
+
+@media (max-width: 478px)
+{
+	.newspaper
+	{
+		margin-top: 70px;
+	}
+}
+
+@media (max-width: 1033px)
+{
+	.menu
+	{
+		display: flex;
+		flex-direction: column;
+	}
 }
